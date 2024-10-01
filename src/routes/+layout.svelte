@@ -9,6 +9,8 @@
 	import '../app.css'
 
 	export let data
+
+	export const prerender = true;
 </script>
 
 <div class="layout">
