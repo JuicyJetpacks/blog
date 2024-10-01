@@ -25,6 +25,8 @@
 	.posts {
 		display: grid;
 		gap: var(--size-7);
+		grid-auto-columns: 1fr;
+		grid-auto-flow: column;
 	}
 
 	.post {
@@ -39,6 +41,7 @@
 	.title {
 		font-size: var(--font-size-fluid-2);
 		text-transform: capitalize;
+		word-break: break-all;
 	}
 
 	.date {
@@ -47,5 +50,6 @@
 
 	.description {
 		margin-top: var(--size-3);
+		word-break: break-all;
 	}
 </style>
