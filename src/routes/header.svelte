@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths'
-
-
 	import Toggle from './toggle.svelte'
 	import * as config from '$lib/config'
 </script>
@@ -11,17 +9,17 @@
 		<b>{config.title}</b>
 	</a>
 
-	<ul class="links">
+	<!-- <ul class="links">
 		<li>
 			<a href={base + '/about'}>About</a>
 		</li>
 		<li>
 			<a href={base + '/contact'}>Contact</a>
 		</li>
-		<!-- <li>
+		<li>
 			<a href="/rss.xml" target="_blank">RSS</a>
-		</li> -->
-	</ul>
+		</li>
+	</ul> -->
 
 	<Toggle />
 </nav>
@@ -29,8 +27,8 @@
 <style>
 	nav {
 		padding-block: var(--size-7);
+		justify-content: space-between;
 	}
-
 	.links {
 		margin-block: var(--size-7);
 	}
